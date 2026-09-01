@@ -38,6 +38,27 @@ omarchy plugin enable robertlindomar.omarchy-ptbr.menu
 omarchy-restart-shell
 ```
 
+## Remoção
+
+```bash
+omarchy plugin disable robertlindomar.omarchy-ptbr.menu
+rm -rf ~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu
+omarchy-restart-shell
+```
+
+Para remover todos os plugins pt-BR de uma vez, use o desinstalador do monorepo:
+
+```bash
+cd omarchy-ptbr-github
+./uninstall.sh
+```
+
+## Licença e dependências
+
+- **Licença:** MIT (ver `LICENSE`). Obra derivada do plugin upstream `omarchy.menu`.
+- **Requisitos:** Omarchy instalado, Hyprland em execução, Quickshell (incluído no Omarchy).
+- **Dependências externas:** nenhuma além do stack Omarchy/Quickshell.
+
 ## Origem
 
 Plugin baseado em: `omarchy.menu`
