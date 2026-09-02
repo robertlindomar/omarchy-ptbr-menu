@@ -14,43 +14,21 @@ Tipos: menu, bar-widget. Entry points: Menu-v2.qml, BarWidget.qml.
 
 ## Instalação
 
-### Pelo Omarchy (recomendado)
-
-1. Clone este repositório em `~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu/`
-2. Valide: `omarchy plugin validate ~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu`
-3. Habilite: `omarchy plugin enable robertlindomar.omarchy-ptbr.menu`
-4. Reinicie o shell: `omarchy-restart-shell`
-
-Ou use o instalador do monorepo principal (inclui todos os plugins):
+### Pelo Omarchy ou Marketplace (recomendado)
 
 ```bash
-git clone https://github.com/robertlindomar/omarchy-ptbr-github.git
-cd omarchy-ptbr-github
-./install.sh
-```
-
-### Manual
-
-```bash
-git clone https://github.com/robertlindomar/omarchy-ptbr-menu.git ~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu
-omarchy plugin validate ~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu
-omarchy plugin enable robertlindomar.omarchy-ptbr.menu
+omarchy plugin add https://github.com/robertlindomar/omarchy-ptbr-menu.git --enable
 omarchy-restart-shell
 ```
+
+Ou instale pelo [Marketplace Omarchy](https://plugins.omarchy.org/).
 
 ## Remoção
 
 ```bash
 omarchy plugin disable robertlindomar.omarchy-ptbr.menu
-rm -rf ~/.config/omarchy/plugins/robertlindomar.omarchy-ptbr.menu
+omarchy plugin remove robertlindomar.omarchy-ptbr.menu --yes
 omarchy-restart-shell
-```
-
-Para remover todos os plugins pt-BR de uma vez, use o desinstalador do monorepo:
-
-```bash
-cd omarchy-ptbr-github
-./uninstall.sh
 ```
 
 ## Licença e dependências
@@ -63,7 +41,7 @@ cd omarchy-ptbr-github
 
 Plugin baseado em: `omarchy.menu`
 
-Projeto principal: https://github.com/robertlindomar/omarchy-ptbr-github
+Projeto comunitário (monorepo): https://github.com/robertlindomar/omarchy-ptbr-github — referência do projeto; não execute scripts remotos sem um commit fixo de 40 caracteres.
 
 ## Aviso
 
